@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+html {
+   font-size: 100%;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+   box-sizing: border-box;
+}
+
+// Typography Reset
+body {
+   line-height: 1;
+   font-family: $font-family;
+
+   @include media-query(mobile-up) {
+      height: 100vh;
+   }
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h1 {
+   font-size: $h1-font;
+}
+
+p,
+span {
+   font-size: $p-font;
+}
+
+// Remove Default Button Styles
+button {
+   -webkit-appearance: button;
+   cursor: pointer;
+}
+
+// Remove Outline on Focus
+*:focus {
+   outline: none;
+}
